@@ -97,6 +97,18 @@ header {
 
 /* nav starts */
 
+.fixed {
+  position: fixed;
+
+  top: 0;
+
+  width: 100%;
+
+  z-index: 20;
+
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.096);
+}
+
 nav {
   width: 100%;
 
@@ -1072,6 +1084,12 @@ footer h2 {
   .products-arrival {
     grid-template-columns: 1fr;
   }
+
+  .search .search-box .search-text {
+    width: 150px;
+
+    padding: 0 1.5rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -1093,6 +1111,15 @@ footer h2 {
 
   .text p {
     font-size: 1.5rem;
+  }
+
+  .product .text {
+    top: 2rem;
+    left: 1.4rem;
+  }
+
+  .product {
+    margin: 3rem 2.2rem;
   }
 
   #special-item .owl-carousel .owl-nav button.owl-next span {
@@ -1143,6 +1170,18 @@ footer h2 {
 
   .products-arrival {
     grid-template-columns: 1fr;
+  }
+
+  .owl-item.active.center {
+    transform: scale(1.1);
+
+    transition: 0.5s;
+  }
+
+  .search .search-box .search-text {
+    width: 250px;
+
+    padding: 0 1.5rem;
   }
 }
 
@@ -1262,6 +1301,16 @@ footer h2 {
   .footer-content-divider {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
+  .owl-item.active.center {
+    transform: scale(1.2);
+
+    transition: 0.5s;
+  }
+
+  .search-btn {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -1351,4 +1400,77 @@ footer h2 {
   .back-to-top i {
     padding: 2.7rem;
   }
+
+  .owl-item.active.center {
+    transform: scale(1.2);
+
+    transition: 0.5s;
+  }
+
+  .product {
+    margin: 3rem 3.6rem;
+  }
+
+  .product .text {
+    top: 2.5rem;
+    left: 3.4rem;
+  }
+}
+
+.search-box {
+  background: #006c3b;
+
+  padding: 10px;
+
+  height: 40px;
+
+  border-radius: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.096);
+}
+
+.search-btn {
+  color: #f2fff9;
+
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 40px;
+
+  background: #006c3b;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.search-text {
+  background: none;
+
+  outline: none;
+
+  border: none;
+
+  font-size: 1.5rem;
+
+  padding: 0;
+
+  color: #fff;
+
+  width: 0px;
+
+  transition: 0.5s;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.527);
 }

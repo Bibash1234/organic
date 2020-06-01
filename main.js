@@ -1,4 +1,4 @@
-// toggle menu 
+// toggle menu and search bar
 
 const selectElement = function (element) {
 
@@ -8,11 +8,41 @@ const selectElement = function (element) {
 
 let menuToggler = selectElement('.menu-toggle');
 
+let searchBox = selectElement('.search-btn');
+
 let body = selectElement('body');
 
 menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
 })
+
+searchBox.addEventListener('click', function () {
+    body.classList.toggle('search');
+})
+
+
+// fixed nav bar 
+
+var height = $('#hero').height();
+
+$(window).scroll(function () {
+
+        if (
+
+            $(this).scrollTop() > height
+        ) {
+            $('.nav-content').addClass('fixed');
+        } else {
+            $('.nav-content').removeClass('fixed');
+        }
+    }
+
+
+);
+
+
+
+
 
 
 // image slider 
