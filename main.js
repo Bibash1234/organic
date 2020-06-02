@@ -10,6 +10,8 @@ let menuToggler = selectElement('.menu-toggle');
 
 let searchBox = selectElement('.search-btn');
 
+let signUpBox = selectElement('.pop-up');
+
 let body = selectElement('body');
 
 menuToggler.addEventListener('click', function () {
@@ -19,6 +21,27 @@ menuToggler.addEventListener('click', function () {
 searchBox.addEventListener('click', function () {
     body.classList.toggle('search');
 })
+
+signUpBox.addEventListener('click', function () {
+    body.classList.toggle('sign-up-box');
+})
+
+
+// sign in sign up 
+const signUpButton = document.getElementById('signUp');
+const signInButton = document.getElementById('signIn');
+const containers = document.getElementById('containers');
+
+signUpButton.addEventListener('click', () => {
+    containers.classList.add("right-panel-active");
+});
+
+signInButton.addEventListener('click', () => {
+    containers.classList.remove("right-panel-active");
+});
+
+
+
 
 
 // fixed nav bar 
