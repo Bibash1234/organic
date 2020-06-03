@@ -12,6 +12,8 @@ let searchBox = selectElement('.search-btn');
 
 let signUpBox = selectElement('.pop-up');
 
+let shoppingCart = selectElement('.pop-up1');
+
 let body = selectElement('body');
 
 menuToggler.addEventListener('click', function () {
@@ -24,6 +26,10 @@ searchBox.addEventListener('click', function () {
 
 signUpBox.addEventListener('click', function () {
     body.classList.toggle('sign-up-box');
+})
+
+shoppingCart.addEventListener('click', function () {
+    body.classList.toggle('shopping-cart-toggle');
 })
 
 
