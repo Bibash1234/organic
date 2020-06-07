@@ -1653,27 +1653,74 @@ footer h2 {
   grid-gap: 3rem;
 }
 
+/* why us section  */
+
+.why-us {
+  position: relative;
+
+  width: 100%;
+
+  margin: 5rem auto 7rem auto;
+}
+
+.why-us-wrap {
+  display: grid;
+
+  grid-gap: 2rem;
+}
+
+.card-why-us {
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+
+  padding: 2rem 1rem;
+}
+
+.card-why-us i {
+  font-size: 1.9rem;
+
+  color: #006c3b;
+}
+
+.card-text {
+  margin: 0 0rem 0 2rem;
+}
+
+.card-text h2 {
+  font-size: 1.6rem;
+
+  text-transform: capitalize;
+
+  font-weight: 100;
+
+  margin: 0.5rem 0;
+}
+
+.card-text p {
+  font-size: 1.3rem;
+
+  text-transform: capitalize;
+
+  font-weight: 100;
+
+  margin: 0.5rem 0;
+}
+
 /* index page ends  */
 
 /* About us index page */
 
 .about-us-section {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr;
-  margin: 5rem 0 7rem 0;
+  margin: 2rem 0 7rem 0;
 }
 
 .about-us-left {
   text-align: center;
-
-  /* display: flex;
-
-  flex-direction: column;
-
-  justify-content: center;
-
-  align-items: center; */
 }
 
 .about-us-left h4 {
@@ -1695,7 +1742,7 @@ footer h2 {
 }
 
 .about-us-left h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 
   text-transform: capitalize;
 
@@ -1707,11 +1754,135 @@ footer h2 {
 .about-us-left p {
   font-size: 1.3rem;
 
+  line-height: 1.6;
+
   text-align: justify;
 
   font-weight: 100;
 
   margin: 2rem 0;
+}
+
+/* card section */
+
+.about-team {
+  position: relative;
+
+  width: 80%;
+
+  margin: 1rem auto 7rem auto;
+}
+
+.about-team h3 {
+  font-size: 2rem;
+
+  font-weight: 100;
+
+  letter-spacing: 1px;
+
+  margin: 1rem 0;
+
+  text-align: center;
+}
+
+.about-team h1 {
+  font-size: 2rem;
+
+  font-weight: 100;
+
+  letter-spacing: 1px;
+
+  margin: 1rem 0;
+
+  text-align: center;
+}
+
+.card-1 {
+  background: #03a75d;
+
+  color: white;
+
+  padding: 1rem;
+
+  margin: 2rem 0;
+}
+
+.card-1 h2 {
+  font-size: 2.1rem;
+
+  font-weight: 100;
+
+  letter-spacing: 1px;
+
+  margin: 1.5rem 0.5rem;
+}
+
+.card-1 p {
+  font-size: 1.5rem;
+
+  font-weight: 100;
+
+  letter-spacing: 1px;
+  margin: 0 0 1.5rem 0.5rem;
+}
+
+/* testimonials section */
+
+.testimonial {
+  margin: 8rem auto;
+
+  background: url(person1.jpg) no-repeat;
+
+  background-position: center;
+
+  background-size: cover;
+}
+
+.testimonial-background {
+  background: rgba(0, 0, 0, 0.521);
+}
+
+.testimonial-text {
+  padding: 2rem 0;
+  color: white;
+  flex-direction: column;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+}
+
+.testimonial-text h2 {
+  font-size: 2.4rem;
+
+  text-transform: capitalize;
+
+  font-weight: 100;
+
+  text-align: center;
+
+  margin: 2rem 0;
+}
+
+.testimonial-text img {
+  width: 150px;
+
+  height: 150px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  object-position: left;
+
+  margin: 1rem 0;
+}
+
+.testimonial-text p {
+  font-size: 1.4rem;
+
+  line-height: 1.6;
 }
 
 /* about page ends  */
@@ -1928,6 +2099,14 @@ footer h2 {
     padding: 0 1.5rem;
   }
 
+  .why-us-wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-why-us i {
+    font-size: 2.5rem;
+  }
+
   /* about us page */
 
   .about-us-section {
@@ -1954,6 +2133,30 @@ footer h2 {
     border-left: 2px solid #006c3bbd;
 
     padding: 0.5rem;
+  }
+
+  .about-team {
+    width: 100%;
+  }
+
+  #wrapping-all {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about-team h3 {
+    text-align: justify;
+
+    border-left: 2px solid #006c3bad;
+
+    display: inline-block;
+
+    padding: 0 0.6rem;
+  }
+
+  .about-team h1 {
+    text-align: justify;
   }
 }
 
@@ -2107,6 +2310,18 @@ footer h2 {
     font-size: 1.5rem;
   }
 
+  .card-why-us i {
+    font-size: 3.5rem;
+  }
+
+  .card-text h2 {
+    font-size: 2.6rem;
+  }
+
+  .card-text {
+    margin: 0;
+  }
+
   /* about us page */
 
   .about-us-left h4 {
@@ -2117,6 +2332,40 @@ footer h2 {
 
   .about-us-left p {
     font-size: 1.8rem;
+  }
+
+  .about-us-section {
+    margin: 5rem 0 7rem 0;
+  }
+
+  /* testimonial */
+
+  .testimonial {
+    width: 100%;
+    height: 60vh;
+  }
+
+  .testimonial-background {
+    position: relative;
+    width: inherit;
+    height: inherit;
+  }
+
+  .testimonial-text {
+    transform: translateY(-50%);
+    left: 11%;
+    top: 50%;
+    position: absolute;
+    positon: absolute;
+    width: 80%;
+  }
+
+  .testimonial-text h2 {
+    font-size: 3.4rem;
+  }
+
+  .testimonial-text p {
+    font-size: 1.9rem;
   }
 }
 
@@ -2257,6 +2506,14 @@ footer h2 {
     left: 3.4rem;
   }
 
+  .why-us-wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .why-us {
+    margin: 8rem auto 7rem auto;
+  }
+
   /* about us page */
 
   .about-us-left h4 {
@@ -2271,5 +2528,36 @@ footer h2 {
     font-size: 1.8rem;
 
     line-height: 1.6;
+  }
+
+  .about-us-section {
+    margin: 5rem 0 7rem 0;
+  }
+
+  .about-team h3 {
+    font-size: 2.5rem;
+  }
+
+  .about-team h1 {
+    font-size: 2.4rem;
+  }
+
+  /* testimonial */
+
+  .testimonial {
+    width: 100%;
+    height: 70vh;
+  }
+
+  .testimonial-text h2 {
+    font-size: 3.4rem;
+  }
+
+  .testimonial-text p {
+    font-size: 1.9rem;
+  }
+
+  blockquote {
+    margin: 2rem 0 5rem 0;
   }
 }

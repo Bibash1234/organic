@@ -216,5 +216,32 @@ $(document).ready(function () {
 
 
 
+    $('#testimonial-slider').owlCarousel(
+
+
+
+        {
+
+
+
+            items: 1,
+
+            autoplay: true,
+
+            smartSpeed: 700,
+
+            look: true,
+
+            autoplayHoverPause: true
+        }
+    );
+
+
+
+
+
+
+
+
 
 });
