@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+
+
 
     <link rel="stylesheet" type="text/css" href="custom.css" />
     <title>Alice</title>
@@ -361,6 +364,8 @@
 
     <!-- nav-ends here -->
 
+
+
     <!-- category product  -->
 
 
@@ -627,6 +632,51 @@
 
 
                     </div>
+
+                    <div id="clock">
+
+                        <div id="time">
+
+                            <div>
+
+                                <span id="days">00
+
+                                </span>
+
+                                <span>Days</span>
+                            </div>
+
+                            <div>
+
+                                <span id="hour">00
+
+                                </span>
+
+                                <span>Hours</span>
+                            </div>
+
+                            <div>
+
+                                <span id="min">00
+
+                                </span>
+
+                                <span>Min</span>
+                            </div>
+
+                            <div>
+
+                                <span id="sec">00
+
+                                </span>
+
+                                <span>Sec</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
 
                     <button type="submit">
 
@@ -1037,9 +1087,46 @@
 
 
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+
+    <script type="text/javascript">
+        var count = new Date('June 10, 2020 00:00:00').getTime();
+
+        var x = setInterval(function () {
+
+
+            var now = new Date().getTime();
+
+            var h = count - now;
+
+            var days = Math.floor(h / (1000 * 60 * 60 * 24));
+
+            var hour = Math.floor((h % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            var min = Math.floor((h % (1000 * 60 * 60)) / (1000 * 60));
+
+            var sec = Math.floor((h % (1000 * 60)) / 1000);
+
+
+            document.getElementById("days").innerHTML = days;
+
+            document.getElementById("hour").innerHTML = hour;
+
+            document.getElementById("min").innerHTML = min;
+
+            document.getElementById("sec").innerHTML = sec;
+
+        });
+    </script>
+
     <script src="main.js">
 
     </script>
+
+
+
+
 
 
 
