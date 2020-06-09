@@ -1922,6 +1922,8 @@ footer h2 {
 
   overflow: hidden;
 
+  height: 260px;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.068);
 
   background: #e3faef;
@@ -1994,9 +1996,7 @@ footer h2 {
 
   align-items: center;
 
-  width: 80%;
-
-  padding: 4rem;
+  height: 100%;
 
   margin: auto;
 }
@@ -2313,6 +2313,12 @@ footer h2 {
   .catalog {
     height: 40vh;
   }
+
+  .category-hover img {
+    width: 70%;
+
+    padding: 2rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -2488,8 +2494,10 @@ footer h2 {
 
   /* category product page */
 
-  .category-hover {
-    height: 30vh;
+  .category-hover img {
+    width: 75%;
+
+    padding: 2rem;
   }
 
   .category1-hover {
@@ -2737,12 +2745,14 @@ footer h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .category-hover {
-    height: 28vh;
-  }
-
   .category1-hover {
     width: 60%;
+  }
+
+  .category-hover img {
+    width: 85%;
+
+    padding: 2rem;
   }
 
   .category-text h2 {
@@ -2960,8 +2970,10 @@ footer h2 {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .category-hover {
-    height: 28vh;
+  .category-hover img {
+    width: 90%;
+
+    padding: 2rem;
   }
 
   .category1-hover {
