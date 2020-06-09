@@ -245,5 +245,3 @@ $(document).ready(function () {
 
 
 });
-
-// digital clock

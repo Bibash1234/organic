@@ -1909,26 +1909,22 @@ footer h2 {
 
 .category-products {
   cursor: pointer;
-  background: linear-gradient(to bottom, #006c3b, #03a75d);
-
-  padding: 0.8rem;
 
   position: relative;
 
   width: 100%;
 
-  border-radius: 10px;
+  box-shadow: 0 0 6px #0000000f;
 }
 
 .category-hover {
-  background: #f2fff9;
   position: relative;
 
   overflow: hidden;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.068);
 
-  /* height: 30vh; */
+  background: #e3faef;
 }
 
 .category-icon {
@@ -1998,13 +1994,11 @@ footer h2 {
 
   align-items: center;
 
-  /* background: #f2fff9; */
+  width: 80%;
 
-  width: 70%;
+  padding: 4rem;
 
   margin: auto;
-
-  height: 100%;
 }
 
 .category-text {
@@ -2017,6 +2011,10 @@ footer h2 {
   line-height: 1.5;
 
   font-weight: 100;
+
+  color: #0f5e3b;
+
+  padding: 0.5rem 0 1rem 0;
 }
 
 .category-text p {
@@ -2025,10 +2023,14 @@ footer h2 {
   text-transform: capitalize;
 
   padding: 1.5rem 0;
+
+  color: #0f5e3b;
 }
 
 .category-text button {
-  background: #f2fff9;
+  background: linear-gradient(to right, #018a4c, #03a75d);
+
+  color: white;
 
   outline: none;
 
@@ -2041,6 +2043,8 @@ footer h2 {
   transition: transform 80ms ease-in;
 
   cursor: pointer;
+
+  border-radius: 4px;
 }
 
 .category-text button:active {
@@ -2052,15 +2056,15 @@ footer h2 {
 
   /* grid-template-columns: 1fr 1fr; */
 
-  grid-gap: 1rem;
+  grid-gap: 2rem;
 
-  margin: 1.5rem 0;
+  margin: 2.5rem 0;
 }
 
 .category1-products {
   cursor: pointer;
-  background: linear-gradient(to right, #006c3b, #03a75d);
-  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.075);
+
   position: relative;
   width: 100%;
   border-radius: 10px;
@@ -2069,7 +2073,25 @@ footer h2 {
 .category1-hover {
   position: relative;
 
-  height: 100%;
+  background: #e3faef;
+
+  margin: 0 2rem 0 0;
+}
+
+.category-text button:active {
+  transform: scale(0.95);
+}
+
+.category1-hover img {
+  width: 100%;
+
+  padding: 5rem;
+
+  transition: transform 0.5s;
+}
+
+.category1-hover img:hover {
+  transform: scale(1.1);
 }
 
 .category-new {
@@ -2151,16 +2173,26 @@ footer h2 {
 
 .line-through p:nth-child(1) {
   text-decoration: line-through;
+
+  color: rgb(240, 70, 70);
+
+  font-size: 1.4rem;
+
+  margin: 0.2rem 0 0 0;
 }
 
 .line-through p:nth-child(2) {
+  color: #0f5e3b;
+
   padding: 1.5rem 1rem;
 }
 
 .line-through p:nth-child(3) {
   padding: 1.5rem 2rem;
 
-  background: #006c3b;
+  background: #05bb69;
+
+  color: white;
 }
 /* deal offer page ends */
 
@@ -2933,13 +2965,7 @@ footer h2 {
   }
 
   .category1-hover {
-    width: 40%;
-
-    margin: auto;
-  }
-
-  .category1-hover img {
-    width: 80%;
+    width: 50%;
   }
 
   .catalog {
