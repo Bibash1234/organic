@@ -14,23 +14,27 @@ let signUpBox = selectElement('.pop-up');
 
 let shoppingCart = selectElement('.pop-up1');
 
+
+
 let body = selectElement('body');
 
 menuToggler.addEventListener('click', function () {
     body.classList.toggle('open');
-})
+});
 
 searchBox.addEventListener('click', function () {
     body.classList.toggle('search');
-})
+});
 
 signUpBox.addEventListener('click', function () {
     body.classList.toggle('sign-up-box');
-})
+});
 
 shoppingCart.addEventListener('click', function () {
     body.classList.toggle('shopping-cart-toggle');
-})
+});
+
+
 
 
 // sign in sign up 
@@ -68,6 +72,45 @@ $(window).scroll(function () {
 
 
 );
+
+// accordion
+
+// var acc = document.getElementsByClassName("accordion-link");
+// var i;
+
+// for (i = 0; i < acc.length; i++) {
+
+//     acc[i].onClick = function () {
+
+//         var answer = this.nextElementSibling;
+
+//         if (answer.style.maxHeight) {
+
+//             answer.style.maxHeight = null;
+//         } else {
+
+//             answer.style.maxHeight = answer.scrollHeight + "px";
+//         }
+//     }
+
+// };
+
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
+}
+
 
 
 
