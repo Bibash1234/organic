@@ -12,6 +12,10 @@ let searchBox = selectElement('.search-btn');
 
 let signUpBox = selectElement('.pop-up');
 
+let Box = selectElement('.pop-up-2');
+
+
+
 let shoppingCart = selectElement('.pop-up1');
 
 
@@ -26,9 +30,16 @@ searchBox.addEventListener('click', function () {
     body.classList.toggle('search');
 });
 
+
 signUpBox.addEventListener('click', function () {
     body.classList.toggle('sign-up-box');
 });
+
+Box.addEventListener('click', function () {
+    body.classList.toggle('sign-in-box');
+});
+
+
 
 shoppingCart.addEventListener('click', function () {
     body.classList.toggle('shopping-cart-toggle');
@@ -73,27 +84,7 @@ $(window).scroll(function () {
 
 );
 
-// accordion
 
-// var acc = document.getElementsByClassName("accordion-link");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-
-//     acc[i].onClick = function () {
-
-//         var answer = this.nextElementSibling;
-
-//         if (answer.style.maxHeight) {
-
-//             answer.style.maxHeight = null;
-//         } else {
-
-//             answer.style.maxHeight = answer.scrollHeight + "px";
-//         }
-//     }
-
-// };
 
 
 var acc = document.getElementsByClassName("accordion");
