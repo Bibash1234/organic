@@ -47,7 +47,7 @@
 
                     </li>
 
-                    <li class="nav-item display pop-up">
+                    <li class="nav-item display pop-up-2">
 
                         <a href="#" class="nav-link">Sign Up</a>
 
@@ -304,10 +304,73 @@
 
                     <li class="nav-item">
 
-                        <a href="catalog.html" class="nav-link">
+                        <a href="#catagories" class="nav-link ">
 
-                            catalog
+
+                            catagories
+                            <i class="fas fa-sort-down"></i>
                         </a>
+
+
+                        <ul class="sub-menu">
+
+
+                            <li>
+
+                                <a href="catalog.html">
+
+                                    Catalog
+                                </a>
+                            </li>
+
+                            <li>
+
+                                <a href="catalog.html">
+
+                                    Catalog
+
+                                    <i class="fas fa-sort-down"></i>
+                                </a>
+
+                                <ul class="sub-menu">
+
+
+                                    <li>
+
+                                        <a href="catalog.html">
+
+                                            Catalog
+                                        </a>
+                                    </li>
+
+                                    <li>
+
+                                        <a href="catalog.html">
+
+                                            Catalog
+                                        </a>
+
+
+                                    </li>
+
+                                    <li>
+
+                                        <a href="catalog.html">
+
+                                            Catalog
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+
+                                <a href="catalog.html">
+
+                                    Catalog
+                                </a>
+                            </li>
+                        </ul>
                     </li>
 
                     <li class="nav-item">
@@ -330,7 +393,7 @@
 
                         <a href="about.html" class="nav-link">
 
-                            about
+                            About
                         </a>
 
                     </li>
@@ -343,6 +406,8 @@
                         </a>
 
                     </li>
+
+
 
 
 
@@ -1100,7 +1165,7 @@
 
 
     <script type="text/javascript">
-        var count = new Date('June 10, 2020 00:00:00').getTime();
+        var count = new Date('June 28, 2020 00:00:00').getTime();
 
         var x = setInterval(function () {
 
@@ -1125,6 +1190,11 @@
             document.getElementById("min").innerHTML = min;
 
             document.getElementById("sec").innerHTML = sec;
+
+            if (h <= 0) {
+
+                clearInterval(x);
+            }
 
         });
     </script>
