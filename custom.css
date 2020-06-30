@@ -73,6 +73,139 @@ header {
 
 .header .nav-list {
   display: flex;
+
+  align-items: center;
+}
+
+.header .nav-list li {
+  /* line-height: 6rem; */
+
+  position: relative;
+}
+
+.header .sub-menu1 a {
+  color: #fff;
+
+  font-size: 1.6rem;
+
+  margin: 2rem;
+}
+
+.header .sub-menu1 li {
+  line-height: 3rem;
+
+  margin: 1.5rem 0;
+}
+
+.sub-menu1 {
+  width: 30rem;
+
+  display: block;
+
+  position: absolute;
+
+  background: linear-gradient(to right, #178d58, #03a75d);
+
+  z-index: 111111;
+
+  top: 16rem;
+
+  right: -1.5rem;
+
+  border-top: 3px solid rgb(255, 255, 11);
+
+  transition: all 650ms ease;
+
+  opacity: 0;
+
+  visibility: hidden;
+}
+
+.sub-menu1::before {
+  content: "";
+
+  position: absolute;
+
+  top: -2.5rem;
+
+  right: 2rem;
+
+  border: 1.2rem solid transparent;
+
+  border-bottom-color: rgb(255, 255, 11);
+}
+
+.header .nav-list li:hover > .sub-menu1 {
+  top: 5rem;
+
+  opacity: 1;
+
+  visibility: visible;
+}
+
+.user-profile img {
+  width: 40px;
+
+  height: 40px;
+
+  border-radius: 30px;
+
+  object-fit: cover;
+
+  margin: 0 0 0 1.5rem;
+
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.384);
+}
+
+.user-profile-big {
+  color: #fff;
+  padding: 0 0 2rem 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+}
+
+.user-profile-big p {
+  font-size: 1.5rem;
+
+  margin: 0.5rem 0 0 1rem;
+
+  letter-spacing: 1px;
+}
+
+.user-profile-big span {
+  font-size: 1.2rem;
+
+  margin: 0 0 0 1rem;
+
+  letter-spacing: 1px;
+
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.user-profile-big img {
+  width: 80px;
+
+  height: 80px;
+
+  border-radius: 80px;
+
+  object-fit: cover;
+
+  margin: 0 0 0 1.5rem;
+
+  cursor: pointer;
+
+  border: 2px solid rgba(255, 255, 255, 0.384);
 }
 
 .header .nav-item {
@@ -245,7 +378,8 @@ nav {
   max-height: initial;
 }
 
-.nav .nav-list a:hover {
+.nav .nav-list a:hover,
+.header .nav-list a:hover {
   color: rgb(255, 255, 11);
 }
 
@@ -4002,6 +4136,3 @@ hr {
 
   overflow: hidden;
 }
-
-/* .tag p {
-} */
